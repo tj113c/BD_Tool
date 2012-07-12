@@ -12,7 +12,7 @@
  
     <package name="default" extends="struts-default" namespace="/">
         <action name="login"
-            class="net.viralpatel.struts2.LoginAction">
+            class="struts2.LoginAction">
             <result name="success">Welcome.jsp</result>
             <result name="error">Login.jsp</result>
         </action>

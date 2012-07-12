@@ -1,4 +1,4 @@
-package net.viralpatel.struts2;
+package struts2;
  
 import com.opensymphony.xwork2.ActionSupport;
  
