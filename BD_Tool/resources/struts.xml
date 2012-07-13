@@ -13,8 +13,8 @@
     <package name="default" extends="struts-default" namespace="/">
         <action name="login"
             class="struts2.LoginAction">
-            <result name="success">Welcome.jsp</result>
-            <result name="error">Login.jsp</result>
+            <result name="success">/jsp/Welcome.jsp</result>
+            <result name="error">/jsp/Login.jsp</result>
         </action>
     </package>
 </struts>
