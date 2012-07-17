@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC 
+		"-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN" 
+		"http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>
+    
+    <definition name="mainLayout" template="/jsp/Layout/MainLayout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/jsp/Layout/Header.jsp" />
+        <put-attribute name="menu" value="/jsp/Layout/Menu.jsp" />
+        <put-attribute name="body" value="" />
+        <put-attribute name="footer" value="/jsp/Layout/Footer.jsp" />
+    </definition>
+    
+      <definition name="/upload.tiles" extends="mainLayout" >
+        <put-attribute name="title" value="Upload" />
+        <put-attribute name="body" value="/jsp/Upload.jsp" />
+    </definition>
+    
+  <!--   <definition name="/infoDisplay.tiles" extends="mainLayout" >
+        <put-attribute name="title" value="Info Display" />
+        <put-attribute name="body" value="/jsp/InfoDisplay.jsp" /> 
+    </definition>
+    
+    <definition name="/emailReview.tiles" extends="mainLayout">
+        <put-attribute name="title" value="Email Review" />
+        <put-attribute name="body" value="/jsp/EmailReview.jsp" />
+    </definition>
+    
+    -->
+</tiles-definitions>

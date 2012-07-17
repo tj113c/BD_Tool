@@ -1,0 +1,29 @@
+@CHARSET "ISO-8859-1";
+
+.BlackBorder
+{
+	border:2px solid #000000; 
+}
+
+#footer
+{
+	background-color: orange; 
+	text-align: center; 
+	font: Calibri; 
+}
+
+#menuFileUpload
+{
+	font: Calibri;
+	font-size: 14;
+}
+
+#menuInfoReview
+{
+	
+}
+
+#menuActivationReminder
+{
+	
+}

@@ -10,11 +10,25 @@
     <constant name="struts.custom.i18n.resources"
         value="ApplicationResources" />
  
-    <package name="default" extends="struts-default" namespace="/">
-        <action name="login"
-            class="struts2.LoginAction">
-            <result name="success">/jsp/Welcome.jsp</result>
-            <result name="error">/jsp/Login.jsp</result>
-        </action>
-    </package>
+	<package name="default" extends="struts-default">
+ 
+	    <result-types>
+			<result-type name="tiles" class="org.apache.struts2.views.tiles.TilesResult" />
+		</result-types>
+		
+		<action name="uploadAction" class="com.att.bdtool.action.UploadAction" >
+	   		<result name="success" type="tiles">/upload.tiles</result>
+		</action>
+ 
+	<!--  <action name="infoDisplayAction" class="com.att.bdtool.InfoDisplayAction" >
+			<result name="success" type="tiles">/infoDisplay.tiles</result>
+		  </action>
+		  
+		  <action name="emailReviewAction" class="com.att.bdtool.EmailReviewAction" >
+		  	<result name="success" type="tiles>/emailReview.tiles</result>
+		  </action>
+		  
+      -->	
+      
+   </package>	
 </struts>

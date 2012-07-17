@@ -15,8 +15,19 @@
         <filter-name>struts2</filter-name>
         <url-pattern>/*</url-pattern>
     </filter-mapping>
+    
     <welcome-file-list>
-        <welcome-file>Login.jsp</welcome-file>
+        <welcome-file>/jsp/Upload.jsp</welcome-file>
     </welcome-file-list>
+    
+    <listener>
+        <listener-class>
+            org.apache.struts2.tiles.StrutsTilesListener
+        </listener-class>
+    </listener>
+    	<context-param>
+    	    <param-name>tilesDefinition</param-name>
+    	    <param-value>/WEB-INF/tiles.xml</param-value>
+    	</context-param>
  
 </web-app>
