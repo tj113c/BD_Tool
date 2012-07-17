@@ -1,4 +1,5 @@
 //_hiddenCategory_\:/struts-tags=false
+//_hiddenCategory_\:http\://tiles.apache.org/tags-tiles=false
 _hiddenCategory_\:DataPalette=false
 _hiddenCategory_\:HTML=false
 _hiddenCategory_\:jsp11=false
